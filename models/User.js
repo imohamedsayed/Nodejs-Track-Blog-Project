@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -20,6 +21,9 @@ const UserSchema = new mongoose.Schema({
     trim: true,
     required: [true, "Password is required"],
     minLength: [6, "Password must be at least 6 characters"],
+  },
+  tokens: {
+    type: [String],
   },
 });
 
@@ -44,7 +48,30 @@ UserSchema.statics.login = async function ({ email, password }) {
   }
 };
 
+UserSchema.methods.generateToken = async function () {
+  const token = jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+    expiresIn: "1d",
+  });
+
+  this.tokens.push(token);
+
+  await this.save();
+
+  return token;
+};
+
+UserSchema.methods.toJSON = function () {
+  const user = this;
+
+  const userObj = user.toObject();
+
+  delete userObj.password;
+  delete userObj.__v;
+  delete userObj.tokens;
+
+  return userObj;
+};
+
 const User = mongoose.model("User", UserSchema);
 
 module.exports = User;
- 

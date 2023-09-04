@@ -1,3 +1,9 @@
 2023-09-05 00:43:31 | INFO | {"name":"Mohamed Sayed","email":"mso10@gmail.com","password":"123456"}
 2023-09-05 00:44:58 | INFO | {"name":"Mohamed Sayed","password":"123456"}
 2023-09-05 00:44:58 | ERROR | User validation failed: email: Email is required
+2023-09-05 02:03:00 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-05 02:18:31 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-05 02:23:36 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-05 02:23:46 | INFO | {"email":"mso1000@gmail.com","password":"123456"}
+2023-09-05 02:23:46 | ERROR | User validation failed: name: Name is required
+2023-09-05 02:23:56 | INFO | {"name":"abbas","email":"mso1000@gmail.com","password":"123456"}

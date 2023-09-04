@@ -4,6 +4,8 @@ const { AuthErrors } = require("../helpers/HandleValidationErrors");
 const loggerEvent = require("../services/logger.service");
 const logger = loggerEvent("auth");
 
+const maxAge = 1 * 24 * 60 * 60 * 1000; // one day in msec
+
 const signup = async (req, res) => {
   try {
     logger.info(req.body);
@@ -13,7 +15,8 @@ const signup = async (req, res) => {
 
     //creating user account
     const user = await User.create({ name, email, password });
-
+    const token = await user.generateToken();
+    res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge });
     res.status(201).json({ user, message: "Account created successfully" });
   } catch (error) {
     logger.error(error.message);
@@ -28,16 +31,21 @@ const signup = async (req, res) => {
     }
   }
 };
-
 const login = async (req, res) => {
   try {
+    logger.info(req.body);
+
     const user = await User.login({
       email: req.body.email,
       password: req.body.password,
     });
 
+    const token = await user.generateToken();
+    res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge });
+
     res.status(200).json({ user, message: "Login successful" });
   } catch (error) {
+    logger.error(error.message);
     const { errors, message } = AuthErrors(error);
     res.status(400).json({ errors, message });
   }
@@ -46,4 +54,5 @@ const login = async (req, res) => {
 module.exports = {
   signup,
   login,
+ 
 };
