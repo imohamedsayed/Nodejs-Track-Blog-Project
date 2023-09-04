@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose
-  .connect(process.env.DBURI || "mongodb://localhost:27017/blog", {
+  .connect(process.env.DBURI || "mongodb://127.0.0.1:27017/blog", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -19,12 +19,10 @@ mongoose
     });
   })
   .catch((error) => {
-    console.log("Error while connecting to DB: ", error);
+    console.log("Error while connecting to DB: ", error.message);
   });
 
 app.use("/auth", require("./routes/AuthRoutes"));
-
-
 
 app.use("*", (req, res) => {
   res.status(404).json({ message: "Requested url is not found" });

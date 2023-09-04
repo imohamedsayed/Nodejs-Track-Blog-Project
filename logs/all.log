@@ -1,0 +1,3 @@
+2023-09-05 00:43:31 | INFO | {"name":"Mohamed Sayed","email":"mso10@gmail.com","password":"123456"}
+2023-09-05 00:44:58 | INFO | {"name":"Mohamed Sayed","password":"123456"}
+2023-09-05 00:44:58 | ERROR | User validation failed: email: Email is required

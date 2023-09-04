@@ -1,9 +1,13 @@
 const User = require("../models/User");
+const { AuthErrors } = require("../helpers/HandleValidationErrors");
 
-const { AuthErrors } = require("../services/HandleValidationErrors");
+const loggerEvent = require("../services/logger.service");
+const logger = loggerEvent("auth");
 
 const signup = async (req, res) => {
   try {
+    logger.info(req.body);
+
     // destructing name, email and password from the request's body
     const { name, email, password } = req.body;
 
@@ -12,6 +16,8 @@ const signup = async (req, res) => {
 
     res.status(201).json({ user, message: "Account created successfully" });
   } catch (error) {
+    logger.error(error.message);
+
     if (error.name === "ValidationError") {
       const { errors, message } = AuthErrors(error);
       res.status(400).json({ errors, message });
