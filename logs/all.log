@@ -7,3 +7,12 @@
 2023-09-05 02:23:46 | INFO | {"email":"mso1000@gmail.com","password":"123456"}
 2023-09-05 02:23:46 | ERROR | User validation failed: name: Name is required
 2023-09-05 02:23:56 | INFO | {"name":"abbas","email":"mso1000@gmail.com","password":"123456"}
+2023-09-05 22:41:05 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:35:26 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:36:10 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:36:36 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:37:05 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:37:05 | ERROR | User.login(...).toObject is not a function
+2023-09-06 03:37:31 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-06 03:39:59 | INFO | {"name":"Abo sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-06 03:46:39 | INFO | {"email":"mso10@gmail.com","password":"123456"}

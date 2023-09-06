@@ -24,8 +24,14 @@ mongoose
     console.log("Error while connecting to DB: ", error.message);
   });
 
+/*
+  --> Registering routes
+*/
 app.use("/auth", require("./routes/AuthRoutes"));
 
+app.use("/user", require("./routes/UserRoutes"));
+
+// Not found Urls
 app.use("*", (req, res) => {
   res.status(404).json({ message: "Requested url is not found" });
 });

@@ -22,10 +22,21 @@ const UserSchema = new mongoose.Schema({
     required: [true, "Password is required"],
     minLength: [6, "Password must be at least 6 characters"],
   },
+  isAdmin: {
+    type: Boolean,
+    default: false,
+  },
   tokens: {
-    type: [String],
+    type: [
+      {
+        type: String,
+        expires: "1d",
+        trim: true,
+      },
+    ],
   },
 });
+
 
 UserSchema.pre("save", async function (next) {
   if (this.isModified("password")) {
@@ -34,7 +45,6 @@ UserSchema.pre("save", async function (next) {
   }
   next();
 });
-
 UserSchema.statics.login = async function ({ email, password }) {
   const user = await User.findOne({ email: email });
   if (user) {
@@ -47,7 +57,6 @@ UserSchema.statics.login = async function ({ email, password }) {
     throw Error("Incorrect email");
   }
 };
-
 UserSchema.methods.generateToken = async function () {
   const token = jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
     expiresIn: "1d",
@@ -59,7 +68,6 @@ UserSchema.methods.generateToken = async function () {
 
   return token;
 };
-
 UserSchema.methods.toJSON = function () {
   const user = this;
 
@@ -67,7 +75,7 @@ UserSchema.methods.toJSON = function () {
 
   delete userObj.password;
   delete userObj.__v;
-  delete userObj.tokens;
+  // delete userObj.tokens;
 
   return userObj;
 };

@@ -16,7 +16,9 @@ const signup = async (req, res) => {
     //creating user account
     const user = await User.create({ name, email, password });
     const token = await user.generateToken();
-    res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge });
+    delete user.tokens;
+
+    res.cookie("jwt", `Bearer ${token}`, { httpOnly: true, maxAge: maxAge });
     res.status(201).json({ user, message: "Account created successfully" });
   } catch (error) {
     logger.error(error.message);
@@ -41,7 +43,9 @@ const login = async (req, res) => {
     });
 
     const token = await user.generateToken();
-    res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge });
+    res.cookie("jwt", `Bearer ${token}`, { httpOnly: true, maxAge: maxAge });
+
+    delete user.tokens;
 
     res.status(200).json({ user, message: "Login successful" });
   } catch (error) {
@@ -54,5 +58,4 @@ const login = async (req, res) => {
 module.exports = {
   signup,
   login,
- 
 };
