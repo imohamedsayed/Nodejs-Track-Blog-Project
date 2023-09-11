@@ -16,3 +16,15 @@
 2023-09-06 03:37:31 | INFO | {"email":"mso10@gmail.com","password":"123456"}
 2023-09-06 03:39:59 | INFO | {"name":"Abo sayed","email":"mso@gmail.com","password":"123456"}
 2023-09-06 03:46:39 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-11 18:05:13 | INFO | {"email":"mso10@gmail.com","password":"123456"}
+2023-09-11 20:21:56 | ERROR | Cannot read properties of undefined (reading '_id')
+2023-09-11 21:23:04 | INFO | {"_id":"64ff2d64adaa1824624bde0c","user":"64f64f8326b3f41b0f2424e5","title":"Node","body":"Node.js is a popular runtime environment for executing JavaScript code on servers. It allows developers to build scalable and efficient web applications, leveraging a non-blocking, event-driven architecture for high performance","image":"images\\2023-09-11T15-08-20.661Z1423494.png","date":"11/9/2023","__v":0}
+2023-09-11 21:23:43 | INFO | {"_id":"64ff2d64adaa1824624bde0c","user":"64f64f8326b3f41b0f2424e5","title":"Node.js","body":"Node.js is a popular runtime environment for executing JavaScript code on servers. It allows developers to build scalable and efficient web applications, leveraging a non-blocking, event-driven architecture for high performance","image":"images\\2023-09-11T18-23-43.480Zwallpaperflare.com_wallpaper.jpg","date":"11/9/2023","__v":0}
+2023-09-11 21:24:50 | INFO | {"_id":"64ff2d64adaa1824624bde0c","user":"64f64f8326b3f41b0f2424e5","title":"Node.js","body":"Node.js is a popular runtime environment for executing JavaScript code on servers. It allows developers to build scalable and efficient web applications, leveraging a non-blocking, event-driven architecture for high performance","image":"images\\2023-09-11T18-24-50.379Zwallpaperflare.com_wallpaper (1).jpg","date":"11/9/2023","__v":0}
+2023-09-11 21:32:07 | ERROR | category is not defined
+2023-09-11 21:33:09 | INFO | {"acknowledged":true,"deletedCount":1}
+2023-09-12 00:32:27 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-12 00:33:40 | INFO | Admin: Mohamed SayedRetrieved all blogs
+2023-09-12 00:49:49 | INFO | {"name":"Ali Ahmed","email":"ali@gmail.com","password":"123456"}
+2023-09-12 01:27:58 | INFO | User: 
+2023-09-12 01:28:15 | INFO | User: 

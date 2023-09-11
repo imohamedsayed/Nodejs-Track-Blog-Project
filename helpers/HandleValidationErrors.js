@@ -19,6 +19,10 @@ const AuthErrors = (err) => {
     errors.password = "Password is incorrect";
   }
 
+  if (err.message.includes("Incorrect old Password")) {
+    errors.password = "Old password is incorrect";
+  }
+
   let message;
   for (var prop in errors) {
     if (errors[prop]) {
@@ -29,7 +33,26 @@ const AuthErrors = (err) => {
 
   return { errors, message };
 };
+const BlogErrors = (err) => {
+  let errors = {};
 
+  if (err.message.includes("Blog validation failed")) {
+    Object.values(err.errors).forEach(({ properties }) => {
+      errors[properties.path] = properties.message;
+    });
+  }
+
+  let message;
+  for (var prop in errors) {
+    if (errors[prop]) {
+      message = errors[prop];
+      break;
+    }
+  }
+
+  return { errors, message };
+};
 module.exports = {
   AuthErrors,
+  BlogErrors,
 };

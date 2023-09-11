@@ -24,12 +24,15 @@ mongoose
     console.log("Error while connecting to DB: ", error.message);
   });
 
+app.use(express.static("./uploads"));
 /*
   --> Registering routes
 */
 app.use("/auth", require("./routes/AuthRoutes"));
 
 app.use("/user", require("./routes/UserRoutes"));
+
+app.use("/blogs", require("./routes/BlogRoutes"));
 
 // Not found Urls
 app.use("*", (req, res) => {

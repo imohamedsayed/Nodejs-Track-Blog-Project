@@ -5,6 +5,9 @@ const loggerEvent = require("../services/logger.service");
 const logger = loggerEvent("auth.middleware");
 
 const requireAuth = (req, res, next) => {
+  if (!req.cookies?.jwt) {
+    return res.status(401).json({ message: "You are not authorized" });
+  }
   const [, token] = req.cookies?.jwt?.split(" ");
   if (token) {
     jwt.verify(token, process.env.JWT_SECRET, async (err, decodedToken) => {
