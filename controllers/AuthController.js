@@ -23,14 +23,12 @@ const signup = async (req, res) => {
   } catch (error) {
     logger.error(error.message);
 
-    if (error.name === "ValidationError") {
-      const { errors, message } = AuthErrors(error);
-      res.status(400).json({ errors, message });
-    } else {
-      res.status(500).json({
-        message: "Something went wrong, please try again later",
-      });
-    }
+    const { errors, message } = AuthErrors(error);
+    if (message) res.status(400).json({ errors, message });
+    else
+      res
+        .status(500)
+        .json({ message: "Something went wrong, please try again later" });
   }
 };
 const login = async (req, res) => {
@@ -41,11 +39,10 @@ const login = async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     });
+    delete user.tokens;
 
     const token = await user.generateToken();
     res.cookie("jwt", `Bearer ${token}`, { httpOnly: true, maxAge: maxAge });
-
-    delete user.tokens;
 
     res.status(200).json({ user, message: "Login successful" });
   } catch (error) {

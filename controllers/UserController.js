@@ -68,7 +68,6 @@ const changePassword = async (req, res) => {
     res.status(400).json({ errors, message });
   }
 };
-
 const update_user = async (req, res) => {
   try {
     const { name, email } = req.body;

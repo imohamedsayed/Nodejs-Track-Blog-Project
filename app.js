@@ -5,10 +5,15 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const app = express();
 
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(
+  cors({
+    origin: "http://localhost:8080",
+    credentials: true,
+  })
+);
 
 mongoose
   .connect(process.env.DBURI || "mongodb://127.0.0.1:27017/blog", {

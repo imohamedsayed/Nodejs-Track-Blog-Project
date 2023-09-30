@@ -28,3 +28,47 @@
 2023-09-12 00:49:49 | INFO | {"name":"Ali Ahmed","email":"ali@gmail.com","password":"123456"}
 2023-09-12 01:27:58 | INFO | User: 
 2023-09-12 01:28:15 | INFO | User: 
+2023-09-30 20:18:53 | INFO | {"name":"Mohamed Sayed","email":"sayed@gmail.com","password":"123456"}
+2023-09-30 20:21:40 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:21:48 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:21:48 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:21:50 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:21:50 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:21:51 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:21:51 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:23:58 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:23:58 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:26:05 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:26:05 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:26:51 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:26:51 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:27:21 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:27:21 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:28:02 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:28:02 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:29:07 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:29:07 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:29:23 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:29:23 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:31:01 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:31:01 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:31:24 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:31:24 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:31:27 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:31:27 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:31:27 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:31:27 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:31:43 | INFO | {"name":"JANE","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:31:43 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:32:14 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:32:14 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:32:48 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:32:48 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:33:10 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:33:10 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:33:32 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:33:32 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:33:57 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:33:57 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:34:18 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:34:18 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
