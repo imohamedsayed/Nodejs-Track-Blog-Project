@@ -6,3 +6,14 @@
 2023-09-11 21:33:09 | INFO | {"acknowledged":true,"deletedCount":1}
 2023-09-12 00:32:27 | INFO | user: Mohamed Sayed viewed his blogs
 2023-09-12 00:33:40 | INFO | Admin: Mohamed SayedRetrieved all blogs
+2023-09-30 22:06:16 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:19 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:25 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:28 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:11:39 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:37:59 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:03 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:06 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:08 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-02 21:49:52 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-02 21:50:02 | INFO | user: Mohamed Sayed viewed his blogs

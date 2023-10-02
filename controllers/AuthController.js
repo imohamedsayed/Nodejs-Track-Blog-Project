@@ -18,7 +18,12 @@ const signup = async (req, res) => {
     const token = await user.generateToken();
     delete user.tokens;
 
-    res.cookie("jwt", `Bearer ${token}`, { httpOnly: true, maxAge: maxAge });
+    res.cookie("jwt", `Bearer ${token}`, {
+      httpOnly: true,
+      maxAge: maxAge,
+      sameSite: "none",
+      secure: true,
+    });
     res.status(201).json({ user, message: "Account created successfully" });
   } catch (error) {
     logger.error(error.message);
@@ -42,7 +47,12 @@ const login = async (req, res) => {
     delete user.tokens;
 
     const token = await user.generateToken();
-    res.cookie("jwt", `Bearer ${token}`, { httpOnly: true, maxAge: maxAge });
+    res.cookie("jwt", `Bearer ${token}`, {
+      httpOnly: true,
+      maxAge: maxAge,
+      sameSite: "none",
+      secure: true,
+    });
 
     res.status(200).json({ user, message: "Login successful" });
   } catch (error) {

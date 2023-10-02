@@ -72,3 +72,43 @@
 2023-09-30 20:33:57 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
 2023-09-30 20:34:18 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
 2023-09-30 20:34:18 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:36:28 | INFO | {"name":"JANE","email":"sayed@gmail.com","password":"123456"}
+2023-09-30 20:36:28 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "sayed@gmail.com" }
+2023-09-30 20:36:37 | INFO | {"name":"JANE","email":"sayed@gmail.com","password":"123456"}
+2023-09-30 20:36:37 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "sayed@gmail.com" }
+2023-09-30 20:36:42 | INFO | {"name":"JANE","email":"sayed100@gmail.com","password":"123456"}
+2023-09-30 20:43:22 | INFO | {"name":"Mohamed Sayed","email":"mso@gmail.com","password":"123456"}
+2023-09-30 20:43:22 | ERROR | E11000 duplicate key error collection: blog.users index: email_1 dup key: { email: "mso@gmail.com" }
+2023-09-30 20:43:27 | INFO | {"name":"Mohamed Sayed","email":"mso5000@gmail.com","password":"123456"}
+2023-09-30 21:11:35 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 21:12:18 | INFO | {"email":"mso@gmail.com","password":"123456789"}
+2023-09-30 21:12:18 | ERROR | Incorrect Password
+2023-09-30 21:12:22 | INFO | {"email":"mso476786@gmail.com","password":"123456"}
+2023-09-30 21:12:22 | ERROR | Incorrect email
+2023-09-30 21:12:26 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:06:16 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:19 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:25 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:06:28 | ERROR | Cast to ObjectId failed for value "my-blogs" (type string) at path "_id" for model "Blog"
+2023-09-30 22:07:55 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:09:28 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:09:54 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:10:52 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:11:10 | INFO | User mso@gmail.com in his profile page
+2023-09-30 22:11:39 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:12:31 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:18:30 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:20:30 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:22:41 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:29:35 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:37:59 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-09-30 22:37:59 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:03 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:06 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:38:08 | INFO | user: Mohamed Sayed viewed his blogs
+2023-09-30 22:42:29 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-02 21:41:11 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-02 21:48:22 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-02 21:49:52 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-02 21:49:52 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-02 21:50:02 | INFO | user: Mohamed Sayed viewed his blogs
