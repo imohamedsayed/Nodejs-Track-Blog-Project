@@ -61,8 +61,22 @@ const login = async (req, res) => {
     res.status(400).json({ errors, message });
   }
 };
-
+const logout = async (req, res) => {
+  try {
+    const user = await User.findByIdAndUpdate(req.user._id, {
+      $pull: { tokens: req.token },
+    });
+    res.cookie("jwt", "", { httpOnly: true, maxAge: 1 });
+    res.status(200).json({ message: "Logged out successfully" });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ message: "Something went wrong, please try again later" });
+  }
+};
 module.exports = {
   signup,
   login,
+  logout,
 };

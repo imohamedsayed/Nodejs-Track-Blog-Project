@@ -362,3 +362,18 @@
 2023-10-03 00:25:10 | INFO | user: Ali mohamed viewed his blogs
 2023-10-03 00:25:21 | INFO | user: Ali mohamed viewed his blogs
 2023-10-03 00:29:19 | INFO | user: Ali mohamed viewed his blogs
+2023-10-03 00:33:35 | INFO | user: Ali mohamed viewed his blogs
+2023-10-03 00:33:38 | INFO | user: Ali mohamed viewed his blogs
+2023-10-03 00:33:39 | INFO | {"_id":"651b33933fb542b7fec932b4","user":{"_id":"651b335f3fb542b7fec932ac","name":"Ali mohamed","email":"ali@gmail.com","isAdmin":false,"image":"/images/user.jpg","tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIzMzVmM2ZiNTQyYjdmZWM5MzJhYyIsImlhdCI6MTY5NjI4MTQzOSwiZXhwIjoxNjk2MzY3ODM5fQ.boRynsE-ChmteKyCyCr_OZcz_9AjJfX1DzXqQE1v7oY","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIzMzVmM2ZiNTQyYjdmZWM5MzJhYyIsImlhdCI6MTY5NjI4MTkwMiwiZXhwIjoxNjk2MzY4MzAyfQ.D9wIAMBPdHhcYQ99JRbIEG7qPm7CAcmBRoH8GF4iGlI"]},"title":"my first blog","body":"hello, my name is Ali.\r\niam 22 years old.\r\ni love all people","image":"images\\2023-10-02T21-18-11.012Z6982823_3366845.jpg","date":"3/10/2023","__v":0}
+2023-10-03 00:33:47 | INFO | {"_id":"651b33933fb542b7fec932b4","user":"651b335f3fb542b7fec932ac","title":"my first blog","body":"hello, my name is Ali.\r\niam 22 years old.\r\ni love all people","image":"images\\2023-10-02T21-33-47.887ZScreenshot 2023-08-07 023732.png","date":"3/10/2023","__v":0}
+2023-10-03 00:33:49 | INFO | user: Ali mohamed viewed his blogs
+2023-10-03 00:33:52 | INFO | {"acknowledged":true,"deletedCount":1}
+2023-10-03 00:33:54 | INFO | user: Ali mohamed viewed his blogs
+2023-10-03 00:45:09 | INFO | {"name":"khlaed","email":"khkh@gmail.com","password":"123456"}
+2023-10-03 00:48:13 | INFO | {"email":"khkh@gmail.com","password":"123456"}
+2023-10-03 00:49:10 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-03 00:49:10 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-03 00:49:34 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-03 00:50:50 | INFO | {"email":"mso@gmail.com","password":"123456"}
+2023-10-03 00:50:50 | INFO | user: Mohamed Sayed viewed his blogs
+2023-10-03 00:50:53 | INFO | Admin: Mohamed SayedRetrieved all blogs

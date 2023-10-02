@@ -19,7 +19,9 @@ const requireAuth = (req, res, next) => {
         if (user) {
           if (user.tokens.includes(token)) {
             delete user.tokens;
+            delete user.password;
             req.user = user;
+            req.token = token;
             next();
           } else {
             res.status(401).json({ message: "You are not authorized" });
@@ -50,6 +52,7 @@ const requireAdmin = (req, res, next) => {
     res.status(500).json({ message: "Something went wrong, try again later." });
   }
 };
+
 
 module.exports = {
   requireAuth,

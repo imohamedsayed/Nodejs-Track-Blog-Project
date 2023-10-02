@@ -6,6 +6,7 @@ const multer = require("multer");
 
 router.get("/profile", requireAuth, UserController.profile);
 
+
 router.patch("/change_password", requireAuth, UserController.changePassword);
 
 router.patch(
