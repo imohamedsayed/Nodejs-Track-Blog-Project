@@ -97,7 +97,7 @@ const update_blog = async (req, res) => {
     );
 
     if (image) {
-      deleteImage(blog.image);
+      if (blog.image) deleteImage(blog.image);
     }
 
     logger.info(updatedBlog);

@@ -37,8 +37,7 @@ BLogSchema.pre("deleteOne", async function (next) {
     if (!blog) {
       return next();
     }
-
-    deleteImage(blog.image);
+    if (blog.image) deleteImage(blog.image);
     next();
   } catch (error) {
     next(error);
@@ -48,9 +47,10 @@ BLogSchema.pre("deleteMany", async function (next) {
   try {
     const blogs = await this.model.find(this.getQuery());
 
-    const imagePathsToDelete = blogs.flatMap((blog) => blog.image);
-
-    deleteImages(imagePathsToDelete);
+    const imagePathsToDelete = blogs.flatMap((blog) => {
+      if (blog.image) return blog.image;
+    });
+    if (imagePathsToDelete.length) deleteImages(imagePathsToDelete);
 
     next();
   } catch (error) {
